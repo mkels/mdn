@@ -12,15 +12,18 @@
 
     <script>
     	var person = {
-    		name: ["Molly", "Kelsey"],
+    		name: {
+    			first: "Molly",
+    			last: "Kelsey",
+    		},
     		age: 24,
     		gender: "female",
     		interests: ["lifting", "trucks"],
     		bio: function() {
-    			alert(this.name[0] + " " + this.name[1] + ' is ' + this.age + ' years old. ' + this.name[1] + ' enjoys ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    			alert(this.name.first + " " + this.name.last + ' is ' + this.age + ' years old. ' + this.name.first + ' enjoys ' + this.interests[0] + ' and ' + this.interests[1] + '.');
     		},
     		greeting: function() {
-    			alert('Hi! I\'m ' + this.name[0] + '.');
+    			alert('Hi! I\'m ' + this.name.first + '.');
     		}
     	};
     </script>
